@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+</head>
+<body>
+<center>
+    <h1>Product</h1>
+    <form method="post" , action="">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <p><a href="{% url 'subcategory' %}">Subcategory</a></p>
+    <p><a href="{% url 'category' %}">Category</a></p>
+</center>
+</body>
+</html>
+
+
+
